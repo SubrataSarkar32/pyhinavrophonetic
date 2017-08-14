@@ -27,6 +27,11 @@ Copyright (C) 2016 Subrata Sarkar <subrtosarkar32@gmail.com>.
 
 The full license text can be found in ``LICENSE``.
 
+Usage
+=====
+from pyhinavrophonetic import hinavro
+      hinavro.parse("kaise ho")
+
 .. _Avro Phonetic: http://omicronlab.com
 .. _Mehdi Hasan Khan: https://github.com/omicronlab
 .. _Rifat Nabi: https://github.com/torifat
@@ -41,9 +46,8 @@ The full license text can be found in ``LICENSE``.
 .. _Sarim Khan: https://github.com/sarim
 
 
-Below is license of 
-pyAvroPhonetic
- from which it has been derived:
+Below is license of pyAvroPhonetic from which it has been derived:
+==================================================================
 
 ==============
 pyAvroPhonetic
