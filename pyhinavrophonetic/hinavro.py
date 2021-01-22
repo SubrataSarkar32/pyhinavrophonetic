@@ -8,7 +8,7 @@ modified by:- Subrata Sarkar <subrotosarkar32@gmail.com>
 original by:- Kaustav Das Modak <kaustav.dasmodak@yahoo.co.in.
 Copyright (C) 2013 Kaustav Das Modak <kaustav.dasmodak@yahoo.co.in.
 
-This file is part of pyAvroPhonetic.
+This file is part of pyhinvrophonetic.
 
 pyAvroPhonetic is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -21,15 +21,16 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with pyAvroPhonetic.  If not, see <http://www.gnu.org/licenses/>.
+along with pyhinavrophonetic.  If not, see <http://www.gnu.org/licenses/>.
 
 """
 
 
 # Imports
-from utils import validate
-from utils import utf
-import config
+from pyhinavrophonetic.utils import validate
+from pyhinavrophonetic.utils import utf
+from pyhinavrophonetic import config
+
 
 
 # Constants

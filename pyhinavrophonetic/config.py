@@ -8,7 +8,7 @@ modified by:- Subrata Sarkar <subrotosarkar32@gmail.com>
 original by:- Kaustav Das Modak <kaustav.dasmodak@yahoo.co.in.
 Copyright (C) 2013 Kaustav Das Modak <kaustav.dasmodak@yahoo.co.in.
 
-This file is part of pyAvroPhonetic.
+This file is part of pyhinvrophonetic.
 
 pyAvroPhonetic is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -21,24 +21,24 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with pyAvroPhonetic.  If not, see <http://www.gnu.org/licenses/>.
+along with pyhinavrophonetic.  If not, see <http://www.gnu.org/licenses/>.
 
 """
 
 
 # Imports
 import os
-import simplejson as json
-import codecs
-
+import json
+import io
 
 # Constants
 # -- Path to current directory
 BASE_PATH = os.path.dirname(__file__)
 # -- path to avrodict.json
-AVRO_DICT_FILE = BASE_PATH+r"\resources\avrodict.json"
+AVRO_DICT_FILE = os.path.abspath(os.path.join(BASE_PATH,
+                                              "resources/avrodict.json"))
 # -- Loads json data from avrodict.json
-AVRO_DICT = json.load(codecs.open(AVRO_DICT_FILE, encoding='utf-8'))
+AVRO_DICT = json.load(io.open(AVRO_DICT_FILE, encoding='utf-8'))
 # -- Shortcut to vowels
 AVRO_VOWELS = set(AVRO_DICT['data']['vowel'])
 # -- Shortcut to consonants

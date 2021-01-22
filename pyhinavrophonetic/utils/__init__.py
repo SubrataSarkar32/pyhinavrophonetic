@@ -25,12 +25,19 @@ along with pyAvroPhonetic.  If not, see <http://www.gnu.org/licenses/>.
 
 """
 
+# Imports
+import sys
+
+
 def utf(text):
-    """Shortcut funnction for encoding given text with utf-8"""
-    try:
-        output = unicode(text, encoding='utf-8')
-    except UnicodeDecodeError:
-        output = text
-    except TypeError:
-        output = text
-    return output
+    """Shortcut funnction for encoding given text with utf-8."""
+    if sys.version_info.major <= 2:
+        try:
+            output = unicode(text, encoding='utf-8')
+        except UnicodeDecodeError:
+            output = text
+        except TypeError:
+            output = text
+        return output
+    else:
+        return text
