@@ -6,9 +6,10 @@ try:
 
 
     setup(name='pyhinavrophonetic',
-          version='2.0.0',
+          version='2.0.2',
           description='Python implementation to convert phonetic to hindi',
           long_description=open('README.rst', 'rt').read(),
+          long_description_content_type='text/markdown',
           author='Subrata Sarkar',
           author_email='subrotosarkar32@gmail.com',
           url='https://bitbucket.org/SubrataSarkar32/pyhinavrophonetic/',
@@ -22,7 +23,6 @@ try:
             'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
             'Operating System :: OS Independent',
             'Programming Language :: Python :: 3',
-            'Programming Language :: Python :: 3.6.5',
             ]
           )
 

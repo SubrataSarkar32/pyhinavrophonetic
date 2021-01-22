@@ -1,6 +1,7 @@
-==============
+
+
 pyhinavrophonetic
-==============
+=================
 Python implementation of the Hindi phonetic-typing software
 
 License
@@ -29,51 +30,18 @@ The full license text can be found in ``LICENSE``.
 
 Usage
 =====
-from pyhinavrophonetic import hinavro
+
+::
+
+
+      from pyhinavrophonetic import hinavro
       hinavro.parse("kaise ho")
 
-.. _Avro Phonetic: http://omicronlab.com
-.. _Mehdi Hasan Khan: https://github.com/omicronlab
-.. _Rifat Nabi: https://github.com/torifat
-.. _jsAvroPhonetic: https://github.com/torifat/jsAvroPhonetic
-.. _PEP 8: http://www.python.org/dev/peps/pep-0008/
-.. _PEP 257: http://www.python.org/dev/peps/pep-0257/
-.. |Master| image:: https://travis-ci.org/kaustavdm/pyAvroPhonetic.png?branch=master
-   :target: https://travis-ci.org/kaustavdm/pyAvroPhonetic
-.. |Develop| image:: https://travis-ci.org/kaustavdm/pyAvroPhonetic.png?branch=develop
-   :target: https://travis-ci.org/kaustavdm/pyAvroPhonetic
-.. _Md Enzam Hossain: https://github.com/ienzam
-.. _Sarim Khan: https://github.com/sarim
-
-
-Below is license of pyAvroPhonetic from which it has been derived:
-==================================================================
-
-==============
-pyAvroPhonetic
-==============
-
-A Python implementation of the popular Bengali phonetic-typing software
-`Avro Phonetic`_.
-
-Branch: Master: |Master| | Develop: |Develop|
 
 Overview
 ========
 
-pyAvroPhonetic provides a Python package that can be imported and used
-by other Python programs or scripts. It implements the *Avro Phonetic
-Dictionary Search Library* by `Mehdi Hasan Khan`_.
-
-*N.B. This package is still experimental and is not (yet) fit for
-production use.*
-
-Inspirations
-------------
-
-This package is inspired from `Rifat Nabi`_\'s `jsAvroPhonetic`_. So
-far, the code is a direct (and shameless) translation of
-jsAvroPhonetic into Python.
+Python implementation of the Hindi phonetic-typing software
 
 Installation
 ============
@@ -82,16 +50,16 @@ Using Git:
 
 ::
 
-    $ git clone https://github.com/kaustavdm/pyAvroPhonetic
-    $ cd pyAvroPhonetic
-    $ sudo python setup.py install
+    $ git clone https://github.com/SubrataSarkar32/pyhinavrophonetic
+    $ cd pyhinavrophonetic
+    $ sudo python3 setup.py install
 
 
 Using Pip:
 
 ::
 
-    $ sudo pip install PyAvroPhonetic
+    $ sudo pip install pyhinavrophonetic
 
 
 Usage
@@ -102,8 +70,8 @@ implemented, the parser can be accessed as:
 
 ::
 
-    >>> from pyavrophonetic import avro
-    >>> avro.parse('aami banglay gaan gai')
+    >>> from pyhinavrophonetic import hinavro
+    >>> hinavro.parse('kaise ho')
 
 Contributing
 ============
@@ -117,6 +85,21 @@ conventions.
 Also, if you find any bugs, please report them in the Issues queue. As
 always, before you report any new issue, please check that it has not
 been already posted by someone else.
+
+
+Below is license of pyAvroPhonetic from which it has been derived:
+==================================================================
+
+
+pyAvroPhonetic
+==============
+
+A Python implementation of the popular Bengali phonetic-typing software
+`Avro Phonetic`_.
+
+Branch: Master: |Master| | Develop: |Develop|
+
+
 
 Acknowledgements
 ================
